@@ -111,7 +111,7 @@ page_protect();
              </tr>
              <tr>
                <td height="35">CITY:</td>
-               <td height="35"><input <input type="text" name="city" id="boxx" required/ ></td>
+               <td height="35"><input type="text" name="city" id="boxx" required / ></td>
              </tr>
              <tr>
                <td height="35">ZIPCODE:</td>
@@ -141,6 +141,10 @@ page_protect();
 			  <tr>
                <td height="35">EMAIL ID:</td>
                <td height="35"><input type="email" name="email" id="boxx" required/ size="30"></td>
+             </tr>
+			 <tr>
+               <td height="35">PASSWORD:</td>
+               <td height="35"><input type="password" name="email" id="boxx" required/ size="30"></td>
              </tr>
 			 <tr>
                <td height="35">JOINING DATE:</td>

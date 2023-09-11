@@ -7,6 +7,7 @@ if(isset($_SESSION["user_data"]))
 }
 ?>
 <?php include 'header.php';?>
+
 <div class="wrapper">
       <div class="tabs">
         <button class="navTab active" data-toggle="login">Login</button>
@@ -43,12 +44,13 @@ if(isset($_SESSION["user_data"]))
           </form>
         </div>
         <div class="content" id="register">
-          <form action="#" method="POST" autocomplete="off">
+          <form action="reg.php" method="POST" autocomplete="off">
             <div class="formGroup">
               <label for="username">Username</label>
               <input
                 type="text"
                 id="username"
+                name="username"
                 placeholder="Username"
                 required
               />
@@ -56,14 +58,16 @@ if(isset($_SESSION["user_data"]))
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="name@example.com"
                 required
                 title="Enter a valid email address"
               />
-              <label for="email">Date of Birth</label>
+              <label for="dob">Date of Birth</label>
               <input
                 type="date"
                 id="dob"
+                name="dob"
                 required
                 title="Enter your date of birth"
               />
@@ -74,6 +78,7 @@ if(isset($_SESSION["user_data"]))
               <input
                 type="password"
                 id="password"
+                name="password"
                 placeholder="Password"
                 required
                 title="Must be at least 6 characters"
@@ -83,6 +88,7 @@ if(isset($_SESSION["user_data"]))
               <input
                 type="password"
                 id="confirmPassword"
+                name="confirmPassword"
                 placeholder="Confirm Password"
               />
               <small class="messageHelp">Password incorrect</small>

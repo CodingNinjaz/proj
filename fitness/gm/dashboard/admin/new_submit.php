@@ -12,11 +12,12 @@ page_protect();
  $dob=$_POST['dob'];
  $phn=$_POST['mobile'];
  $email=$_POST['email'];
+ $password=$_POST['password'];
  $jdate=$_POST['jdate'];
  $plan=$_POST['plan'];
 
 //inserting into users table
-$query="insert into users(username,gender,mobile,email,dob,joining_date,userid) values('$uname','$gender','$phn','$email','$dob','$jdate','$memID')";
+$query="insert into users(username,gender,mobile,email,password,dob,joining_date,userid) values('$uname','$gender','$phn','$email','$password','$dob','$jdate','$memID')";
     if(mysqli_query($con,$query)==1){
       //Retrieve information of plan selected by user
       $query1="select * from plan where pid='$plan'";
