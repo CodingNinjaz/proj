@@ -1,0 +1,1 @@
+<footer class="main">Copyright &copy; 2023 <strong>Befit Gym </strong></footer>
