@@ -16,15 +16,19 @@
 		</ul>
 	</li>
 
-	<!-- <li id="health_status"><a href="new_health_status.php"><i class="entypo-user-add"></i><span>Health Status</span></a> 	
+	<!-- <li id="health_status"><a href="new_health_status.php"><i class="entypo-user-add"></i><span>Traing section</span></a> 	
 
-		<li class="" id="planhassubopen"><a href="#" onclick="memberExpand(2)"><i class="entypo-quote"></i><span>Plan</span></a>
+		<li class="" id="planhassubopen"><a href="#" onclick="memberExpand(2)"><i class="entypo-quote"></i><span>Videos </span></a>
 
 		<ul id="planExpand">
-			<li class="active">
-				<a href="new_plan.php"><span>New Plan</span></a></li>
+		<li class="active">
+				<a href="over_members_month.php"><span>Add a Video</span></a>
+			</li>
 
-			<li><a href="view_plan.php"><span>Edit Subsciption Details</span></a></li>
+			<li>
+				<a href="over_members_year.php"><span>Videos</span></a>
+			</li>
+
 		</ul> -->
 
 	<!-- <li class="" id="overviewhassubopen"><a href="#" onclick="memberExpand(3)"><i class="entypo-box"></i><span>Overview</span></a>

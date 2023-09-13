@@ -55,7 +55,7 @@ page_protect();
 				<div class="row">
 					
 					<!-- Profile Info and Notifications -->
-					<div class="col-md-6 col-sm-8 clearfix">	
+				<div class="col-md-6 col-sm-8 clearfix">	
 							
 					</div>
 					
@@ -79,29 +79,18 @@ page_protect();
 					
 				</div>
 
-		<h2>Member Per Year</h2>
+		<h2>Exercise</h2>
 
 		<hr />
 
-	<form>
-		<?php
-		// set start and end year range
-		$yearArray = range(2000, date('Y'));
-		?>
-		<!-- displaying the dropdown list -->
-		<select name="year" id="syear">
-		    <option value="0">Select Year</option>
-		    <?php
-		    foreach ($yearArray as $year) {
-		        // if you want to select a particular year
-		        $selected = ($year == date('Y')) ? 'selected' : '';
-		        echo '<option '.$selected.' value="'.$year.'">'.$year.'</option>';
-		    }
-		    ?>
-		</select>
-	<input type="button" class="a1-btn a1-blue"  style="margin-bottom:5px;" name="search" onclick="showMember();" value="Search">
-
-	</form>
+		<form method="post" action="process.php">
+    Link: <input type="text" name="link"><br>
+    Text: <input type="text" name="text"><br>
+    <input type="submit" value="Submit">
+</form>
+    </div>
+</body>
+</html>
 
 	<table id="meyear" border=1>
 	
@@ -139,5 +128,4 @@ page_protect();
 
    	</div>
 
-    </body>
-</html>
+    
