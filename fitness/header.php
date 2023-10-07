@@ -61,7 +61,7 @@
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="/fitness/index.php#coaches">Coaches</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="/fitness/login.php">Login</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/fitness/user/index.php">Login</a>
                       </li>
                     </ul>
                   </div>

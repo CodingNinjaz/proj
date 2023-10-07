@@ -77,6 +77,7 @@ if(isset($_SESSION["user_data"]))
 		
 				<div class="login-bottom-links">
 					<a href="forgot_password.php" class="link">Forgot your password?</a>
+					<b style="color:'red'!important;"><a href="register.php" class="link">New User! Please Register</a></b>
 				</div>			
 		</div>
 		

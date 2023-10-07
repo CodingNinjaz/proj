@@ -34,14 +34,30 @@ else{
 $user_id_auth = mysqli_real_escape_string($con, $user_id_auth);
 $pass_key     = mysqli_real_escape_string($con, $pass_key);
 $sql          = "SELECT * FROM users WHERE username='$user_id_auth' and pass_key='$pass_key'";
+if ($sql) {
+   
+
+$query = "SELECT userid FROM users WHERE username = '$user_id_auth'";
+$result = mysqli_query($con, $query);
+
+
+
+
+
+
+
+
+
 $result       = mysqli_query($con, $sql);
 $count        = mysqli_num_rows($result);
 if ($count == 1) {
     $row = mysqli_fetch_assoc($result);
     session_start();
+    $userid = $row['userid'];
     // store session data
     $_SESSION['user_data']  = $user_id_auth;
     $_SESSION['logged']     = "start";
+    $_SESSION['uid'] = $userid;
     // $_SESSION['auth_level'] = $row['level'];
     $_SESSION['full_name']  = $user_id_auth;
     $_SESSION['username']=$row['Full_name'];
@@ -58,6 +74,7 @@ if ($count == 1) {
 } else {
     include 'index.php';
     echo "<html><head><script>alert('Username OR Password is Invalid');</script></head></html>";
+}
 }
 }
 ?>
